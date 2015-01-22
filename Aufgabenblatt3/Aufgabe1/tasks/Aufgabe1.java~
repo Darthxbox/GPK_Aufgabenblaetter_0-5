@@ -1,0 +1,47 @@
+
+public class Aufgabe1 {
+
+    int counter = 0;
+    int overflowCounter = 0;
+    int max;
+
+    //Konstruktor welcher den Maximalwert initialisiert.
+    public Aufgabe1(int max)
+    {
+        this.max = max;
+    }
+
+    //Geta-Methoden
+    public int getCounter()
+    {
+        return counter;
+    }
+    public int getOverflowCounter()
+    {
+        return overflowCounter;
+    }
+
+    //Setzt beide Variabeln wieder auf 0 zurück
+    public void reset()
+    {
+        counter = 0;
+        overflowCounter = 0;
+    }
+
+    public void increment()
+    {
+       counter++;
+
+        //Falls aktuelle Zahl höher als das Maximum, setze die aktuelle auf 0 und erhöhe den Overflow um 1.
+        if(counter >= max)
+        {
+            counter = 0;
+            overflowCounter++;
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+

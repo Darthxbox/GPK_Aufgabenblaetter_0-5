@@ -1,0 +1,22 @@
+public class Aufgabe3 {
+
+    private static void printSequenz(int n) {
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i);
+        }
+    /*
+        if(n >= 1) {
+            for (int i = 1; i <= n; i++) {
+                System.out.print(i);
+            }
+            System.out.println("");
+        printSequenz(n-1);
+        }*/
+    }
+
+    public static void main(String[] args) {
+        printSequenz(5);
+    }
+
+}
